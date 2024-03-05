@@ -1,0 +1,50 @@
+{
+  "name": "treeqlite-http-types",
+  "version": "0.1.0",
+  "exports": {
+    "./all": {
+      "import": {
+        "types": "./lib/src/all.d.ts",
+        "default": "./lib/src/all.js"
+      }
+    },
+    "./exec": {
+      "import": {
+        "types": "./lib/src/exec.d.ts",
+        "default": "./lib/src/exec.js"
+      }
+    },
+    "./query": {
+      "import": {
+        "types": "./lib/src/query.d.ts",
+        "default": "./lib/src/query.js"
+      }
+    }
+  },
+  "type": "module",
+  "repository": "git@github.com:ryb73/treeqlite-http-types.git",
+  "author": "Ryan Biwer",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "build": "tsc",
+    "lint-strict": "yarn lint --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx,js",
+    "watch": "yarn build --watch"
+  },
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.11.0",
+    "@ryb73/eslint-config": "^13.0.2",
+    "@types/eslint": "^8",
+    "eslint": "^8.57.0",
+    "eslint-config-hardcore": "^45.3.0",
+    "typescript": "~5.2.0"
+  },
+  "resolutions": {
+    "typescript": "~5.2.0"
+  },
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "fp-ts": "^2.16.2",
+    "io-ts": "^2.2.21"
+  }
+}
