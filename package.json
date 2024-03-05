@@ -21,6 +21,9 @@
       }
     }
   },
+  "files": [
+    "lib/src"
+  ],
   "type": "module",
   "repository": "git@github.com:ryb73/treeqlite-http-types.git",
   "author": "Ryan Biwer",
