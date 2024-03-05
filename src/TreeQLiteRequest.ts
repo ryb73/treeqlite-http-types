@@ -1,3 +1,4 @@
+import type { TypeOf } from "io-ts";
 import {
   array,
   exact,
@@ -11,7 +12,7 @@ import {
 
 const SQLiteParam = union([number, string]);
 
-export const TreeQLiteRequest = intersection([
+const TreeQLiteRequest = intersection([
   strict({
     query: string,
   }),
@@ -21,3 +22,5 @@ export const TreeQLiteRequest = intersection([
     })
   ),
 ]);
+type TreeQLiteRequest = TypeOf<typeof TreeQLiteRequest>;
+export { TreeQLiteRequest };

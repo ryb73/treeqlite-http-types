@@ -19,6 +19,12 @@
         "types": "./lib/src/query.d.ts",
         "default": "./lib/src/query.js"
       }
+    },
+    ".": {
+      "import": {
+        "types": "./lib/src/index.d.ts",
+        "default": "./lib/src/index.js"
+      }
     }
   },
   "files": [
@@ -40,6 +46,7 @@
     "@types/eslint": "^8",
     "eslint": "^8.57.0",
     "eslint-config-hardcore": "^45.3.0",
+    "eslint-plugin-deprecation": "^2.0.0",
     "typescript": "~5.2.0"
   },
   "resolutions": {
