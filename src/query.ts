@@ -1,6 +1,6 @@
 import type { TypeOf } from "io-ts";
 import { bigint, number, strict, union } from "io-ts";
-import { TreeQLiteRequest } from "./TreeQLiteRequest";
+import { TreeQLiteRequest } from "./TreeQLiteRequest.js";
 
 const RequestBody = TreeQLiteRequest;
 type RequestBody = TypeOf<typeof RequestBody>;
