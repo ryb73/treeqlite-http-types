@@ -3,6 +3,7 @@ import {
   array,
   exact,
   intersection,
+  nullType,
   number,
   partial,
   strict,
@@ -10,7 +11,7 @@ import {
   union,
 } from "io-ts";
 
-const SQLiteParam = union([number, string]);
+const SQLiteParam = union([nullType, number, string]);
 
 const TreeQLiteRequest = intersection([
   strict({
